@@ -26,12 +26,10 @@ function App() {
                     <img src={viteLogo} className="vite" alt="Vite logo" />
                 </div>
 
-                <div className="mb-3">
-                    <h1 className="text-slate-100">Get started</h1>
-                    <p className="text-slate-200">
-                        Edit <code>src/App.tsx</code> and save to test{" "}
-                        <code>HMR</code>
-                    </p>
+                <div className="my-3">
+                    <h1 className="text-slate-100 text-lg">
+                        Muhammad Bagus Aditya
+                    </h1>
                 </div>
 
                 <button
