@@ -10,20 +10,13 @@ function App() {
     return (
         <>
             <section className="grid place-content-center bg-slate-900 h-screen">
-                <div className="hero">
-                    <img
-                        src={heroImg}
-                        className="base"
-                        width="170"
-                        height="179"
-                        alt=""
-                    />
+                <div className="flex gap-4 justify-center mb-4">
+                    <img src={viteLogo} className="" alt="Vite logo" />
                     <img
                         src={reactLogo}
-                        className="framework"
+                        className="animate-spin [animation-duration:3s]"
                         alt="React logo"
                     />
-                    <img src={viteLogo} className="vite" alt="Vite logo" />
                 </div>
 
                 <div className="my-3">
