@@ -1,37 +1,41 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <section className="grid place-content-center bg-slate-900 h-screen">
-                <div className="flex gap-4 justify-center mb-8">
-                    <img src={viteLogo} className="w-32" alt="Vite logo" />
-                    <img
-                        src={reactLogo}
-                        className="animate-spin [animation-duration:3s]"
-                        alt="React logo"
-                    />
-                </div>
+            <div className="bg-gray-100 min-h-screen p-6">
+                <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    {/* Card 1 */}
+                    <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-all hover:border hover:bg-gray-200 hover:scale-105 duration-300 flex justify-center items-center text-lg">
+                        Card 1
+                    </div>
+                    {/* End Card 1 */}
 
-                <div className="mb-4">
-                    <h1 className="text-slate-100 text-2xl font-bold">
-                        MUHAMMAD BAGUS ADITYA
-                    </h1>
-                </div>
+                    {/* Card 2 */}
+                    <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-all hover:border hover:bg-gray-200 hover:scale-105 duration-300 flex justify-center items-center text-lg">
+                        Card 2
+                    </div>
+                    {/* End Card 2 */}
 
-                <button
-                    type="button"
-                    className="border-blue-700 border-2 text-blue-500 py-2 px-4 rounded-md active:ring-4 hover:bg-blue-800 hover:text-slate-200 ring-0 ring-blue-600/20 transition-all w-fit mx-auto duration-200"
-                    onClick={() => setCount((count) => count + 1)}
-                >
-                    {count} time(s) clicked
-                </button>
-            </section>
+                    {/* Card 3 */}
+                    <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-all hover:border hover:bg-gray-200 hover:scale-105 duration-300 flex justify-center items-center text-lg">
+                        Card 3
+                    </div>
+                    {/* End Card 3 */}
+
+                    {/* Card 4 */}
+                    <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-all hover:border hover:bg-gray-200 hover:scale-105 duration-300 flex justify-center items-center text-lg">
+                        Card 4
+                    </div>
+                    {/* End Card 4 */}
+
+                    {/* Card 5 */}
+                    <div className="bg-white p-6 min-h-40 rounded-lg shadow hover:shadow-lg transition-all hover:border hover:bg-gray-200 hover:scale-105 duration-300 flex justify-center items-center text-lg">
+                        Card 5
+                    </div>
+                    {/* End Card 5 */}
+                </div>
+            </div>
         </>
     );
 }
