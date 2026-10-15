@@ -6,7 +6,7 @@ function Login() {
   return (
     <>
       <main className="grid place-content-center min-h-screen">
-        <div className="min-w-[320px] flex flex-col">
+        <div className="w-[clamp(320px,20vw,60%)] flex flex-col">
           <Logo />
 
           <Form />

@@ -3,7 +3,7 @@ export default function Form() {
     <>
       {/* form start */}
       <div className="mt-12">
-        <form action="" className="space-y-3">
+        <form action="" className="space-y-4">
           <div>
             <label htmlFor="email" className="block text-sm mb-2">
               Email address
@@ -33,7 +33,7 @@ export default function Form() {
           <div className="flex items-center">
             <input
               type="checkbox"
-              className="text-sm accent-primary"
+              className="text-sm accent-primary w-4"
               name="status"
               id="status"
             />
