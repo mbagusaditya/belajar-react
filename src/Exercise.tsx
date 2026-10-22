@@ -1,9 +1,10 @@
 import UserCard from './UserCard';
 import { getUsers } from './Services';
 import { useEffect, useState } from 'react';
+import type { User } from './types';
 
 export default function Exercise() {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -28,7 +29,7 @@ export default function Exercise() {
           User Cards
         </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {users.map((user, index) => (
+          {users.map((user: User, index) => (
             <UserCard key={index} {...user} />
           ))}
         </div>

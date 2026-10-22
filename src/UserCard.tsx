@@ -1,12 +1,7 @@
 import { useState } from 'react';
+import type { User } from './types';
 
-export default function UserCard(props: {
-  name: string;
-  email: string;
-  street: string;
-  city: string;
-  age?: undefined | number;
-}) {
+export default function UserCard(props: User) {
   const { name, email, street, city, ...rest } = props;
 
   const [clicked, setClicked] = useState(false);
