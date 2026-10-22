@@ -1,0 +1,35 @@
+import { useState } from 'react';
+
+export default function UserCard(props: {
+  name: string;
+  email: string;
+  street: string;
+  city: string;
+}) {
+  const { name, email, street, city } = props;
+
+  const [clicked, setClicked] = useState(false);
+
+  // Fungsi handler
+  const handleClick = () => {
+    setClicked(true);
+  };
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">{name}</h2>
+      <p className="text-gray-600">
+        <span className="font-medium">Email:</span> {email}
+      </p>
+      <p className="text-gray-600">
+        <span className="font-medium">Address:</span> {street}, {city}
+      </p>
+      <button
+        className={`${clicked ? 'bg-special-green' : 'bg-gray-01'} text-white p-2 rounded-md`}
+        onClick={handleClick}
+      >
+        {clicked ? 'Tombol sudah diklik' : 'Silakan Klik'}
+      </button>
+    </div>
+  );
+}
