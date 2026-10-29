@@ -5,3 +5,8 @@ export type User = {
   city: string;
   age?: number | undefined;
 };
+
+export type Post = {
+  title: string;
+  body: string;
+};
