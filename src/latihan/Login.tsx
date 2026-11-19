@@ -1,6 +1,6 @@
-import Form from './components/login/Form';
-import GoogleButton from './components/login/GoogleButton';
-import Logo from './components/login/Logo';
+import Form from './../components/login/Form';
+import GoogleButton from './../components/login/GoogleButton';
+import Logo from './../components/login/Logo';
 
 function Login() {
   return (
