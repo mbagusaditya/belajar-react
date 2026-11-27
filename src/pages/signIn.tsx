@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import GoogleButton from '../components/Elements/GoogleButton';
 import FormSignIn from '../components/Fragments/FormSignIn';
 import AuthLayout from '../components/Layouts/AuthLayout';
@@ -18,7 +19,9 @@ export default function SignIn() {
 
       {/* link start */}
       <div className="flex justify-center">
-        <a className="text-primary text-sm font-bold">Create an account</a>
+        <Link to="/register" className="text-primary text-sm font-bold">
+          Create an account
+        </Link>
       </div>
       {/* link end */}
     </AuthLayout>

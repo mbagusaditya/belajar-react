@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import GoogleButton from '../components/Elements/GoogleButton';
 import FormSignUp from '../components/Fragments/FormSignUp';
 import AuthLayout from '../components/Layouts/AuthLayout';
@@ -19,8 +20,10 @@ export default function SignUp() {
       {/* link start */}
       <div className="flex justify-center">
         <p className="text-sm font-bold">
-          Already have an account?
-          <a className="text-primary">Sign in here</a>
+          Already have an account?&nbsp;
+          <Link to="/login" className="text-primary">
+            Sign in here
+          </Link>
         </p>
       </div>
       {/* link end */}
